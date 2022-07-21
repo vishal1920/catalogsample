@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["catalogsample.csproj", "catalogservice/"]
+COPY ["catalogsample.csproj", "/"]
 RUN dotnet restore "catalogsample.csproj"
 COPY . .
 WORKDIR "/src/"
