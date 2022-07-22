@@ -7,5 +7,4 @@ public class Product
     public string Description { get; set; }
     public string Crust { get; set; }
     public string Size { get; set; }
-    public DateTime Date { get; set; }
 }
