@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile -t catalogservice:2.0
     - name: tag docker image
-      run: docker tag catalogservice:2.0 ghcr.io/vishal1920/catalogsample/catalogservice:2.0
+      run: docker tag catalogservice:2.0 ghcr.io/vishal1920/catalogservice:2.0
     - name: push docker image
-      run: docker push ghcr.io/vishal1920/catalogsample/catalogservice:2.0
+      run: docker push ghcr.io/vishal1920/catalogservice:2.0
